@@ -2,6 +2,7 @@
 import { useState } from "react";
 import styles from "./page.module.css";
 import Project from "../components/project";
+import Modal from "../components/modal";
 
 const projects = [
   {
@@ -42,6 +43,7 @@ export default function Home() {
           );
         })}
       </div>
+      <Modal modal={modal} projects={projects}/>
     </main>
   );
 }
